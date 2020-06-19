@@ -1,0 +1,28 @@
+---
+layout: page
+title: Apps
+include_in_header: true
+---
+<div class="apps">
+    {% for app in site.apps %}
+	    {% if app.title %}
+		<div class="app">
+	        <a href="{{ app.link }}" class="icon">
+	         <img src="{{ app.icon }}">
+	      </a>
+	        <div class="appText" >
+	            <a href="{{ app.link }}" style="text-decoration: none;">
+	                <h3>{{ app.title }}</h3>
+	            </a>
+	            <p>
+	                {{ app.desc }}
+	            </p>
+	        </div>
+	    </div>
+	    {% endif %}
+    {% endfor %}
+    {% if site.apps == nil %}
+    	<h1> Here is nothing yet </h1>
+		<p>somebody forgot to fill this page..</p>
+    {% endif %}
+</div>

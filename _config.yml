@@ -1,0 +1,47 @@
+page_title                                : Artux
+
+appstore_link                             :             
+playstore_link                            : https://play.google.com/store/apps/dev?id=4907364035599167471
+
+site_icon                                 : /artux-page/favicon.ico
+site_name                                 : RTUX                                                
+
+apps                                      :
+
+
+topbar_color                              : "#000000"
+topbar_transparency                       : 0.7
+topbar_title_color                        : "#ffffff"
+body_background_color                     : "#000"
+
+cover_image                               : /artux-page/assets/headerimage.png                 
+cover_overlay_color                       : "#363b3d"
+cover_overlay_transparency                : 0.3
+
+device_color                              : black                                  
+
+body_background_color                     : "#ffffff"
+
+link_color                                : "#e53935"
+
+slogan_title_color                        : "#ffffff"
+
+footer_text_color                         : "#666666"
+
+sass:
+  style: :compressed
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - LICENSE
+  - README.md
+  - CNAME
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+markdown: kramdown

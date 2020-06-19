@@ -1,0 +1,22 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body class="pageBody">
+    <div class="headerBackground pageHeaderBackground">
+        <div class="container pageContainer">
+        {% include header.html %}
+            <article class="page markdown-body">
+                {{ content }}
+            </article>
+        </div>
+        {% include footer.html %}
+    </div>
+</body>
+
+</html>
